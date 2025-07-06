@@ -45,10 +45,10 @@ export default function Textform(props) {
                     <textarea className="form-control" value = {text} onChange={handlechange} style={{backgroundColor: props.mode === 'dark'?'#1f1e1e':'white' ,
                     color : props.mode === 'dark'?'white':'#1f1e1e' }} id="myBox" rows = "8"></textarea>
                 </div>
-                <button className="btn btn-primary my-3 "  onClick={handleupclick}>convert to uppercase</button>
-                <button className="btn btn-primary my-3 mx-2"  onClick={handlelowerclick}>convert to lowercase</button>
-                <button className="btn btn-primary my-3 mx-2"  onClick={handletrimclick}>remove extra spaces</button>
-                <button className="btn btn-danger my-3 mx-2"  onClick={handleclearclick}>clear</button>
+                <button disabled={text.length=== 0} className="btn btn-primary my-3 mx-2"  onClick={handlelowerclick}>convert to lowercase</button>
+                <button disabled={text.length=== 0} className="btn btn-primary my-3 mx-2"  onClick={handletrimclick}>remove extra spaces</button>
+                <button disabled={text.length=== 0} className="btn btn-primary my-3 mx-2"  onClick={handleupclick}>convert to uppercase</button>
+                <button disabled={text.length=== 0} className="btn btn-danger my-3 mx-2"  onClick={handleclearclick}>clear</button>
             </div>
             <div className='container' style={{color: props.mode === 'dark'?'white':'#1f1e1e'}}>
                 <h2> your text summary</h2>
