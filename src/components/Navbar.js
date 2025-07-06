@@ -8,11 +8,11 @@ export default function Navbar(props) {
     <nav className={`navbar navbar-expand-lg`} style={{backgroundColor: props.mode === 'dark' ? '#212529' : props.mode === 'blue' ? 'blue' : props.mode === 'green' ? '#1f7d27' : 'white'}}>
       <div className="container-fluid">
         {/* <Link className={`navbar-brand text-${props.mode==='light'?'dark':'white'} me-3 `} to="/" > {props.title} </Link> */}
-        <a className={`navbar-brand text-${props.mode==='light'?'dark':'white'} me-3 `} href="#" > {props.title} </a>
+        <a className={`navbar-brand text-${props.mode==='light'?'dark':'white'} me-3 `} href="/" > {props.title} </a>
         <div className="collapse navbar-collapse" >
           <ul className="navbar-nav">
               {/* <Link className={`nav-link active aria-current="page" text-${props.mode==='light'?'dark':'white'} me-1`} to="/" >Home</Link> */}
-              <a className={`nav-link active aria-current="page" text-${props.mode==='light'?'dark':'white'} me-1`} href="#" >Home</a>
+              <a className={`nav-link active aria-current="page" text-${props.mode==='light'?'dark':'white'} me-1`} href="/" >Home</a>
               {/* <Link className={`nav-link text-${props.mode==='light'?'dark':'white'} `} to="/about" >{props.about}</Link> */}
           </ul>
           <div className="dropdown ms-auto mx-4  text -nowrap">
